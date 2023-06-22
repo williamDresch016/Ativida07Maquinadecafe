@@ -1,0 +1,69 @@
+
+
+            if (opcao == 2)
+            {
+                if (valorAuxiliar >= capuccino)
+                {
+
+                    valorNaMaquina = valorAuxiliar - capuccino;
+
+                    Console.WriteLine("Preparando Capuccino...");
+                }
+                else
+                {
+                    Console.WriteLine("Valor insuficiente!");
+                    Console.WriteLine("Pressione ENTER para reiniciar");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Main(null);
+                    return;
+                }
+            }
+
+            if (opcao == 3)
+            {
+                if (valorAuxiliar >= mocaccino)
+                {
+
+                    valorNaMaquina = valorAuxiliar - mocaccino;
+
+                    Console.WriteLine("Preparando Mocaccino...");
+                }
+                else
+                {
+                    Console.WriteLine("Valor insuficiente!");
+                    Console.WriteLine("Pressione ENTER para reiniciar");
+                    Console.ReadKey(); ;
+                    Console.Clear();
+                    Main(null);
+                    return;
+                }
+            }
+
+            if (opcao == 4)
+            {
+                if (valorAuxiliar >= aguaQuente)
+                {
+
+                    valorNaMaquina = valorAuxiliar - aguaQuente;
+
+                    Console.WriteLine("Preparando Água Quente...");
+                }
+                else
+                {
+                    Console.WriteLine("Valor insuficiente!");
+                    Console.WriteLine("Pressione ENTER para reiniciar");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Main(null);
+                    return;
+                }
+            }
+
+            Console.WriteLine("\n___________________________________\n");
+            Console.WriteLine("Sua bebida está pronta!");
+            Console.WriteLine("Pressione ENTER para encerrar");
+            Console.ReadKey();
+            Console.Clear();
+            Main(null);
+            return;
